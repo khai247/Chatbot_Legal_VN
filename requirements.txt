@@ -1,0 +1,21 @@
+# --- Core ---
+pydantic>=2.6
+pydantic-settings>=2.2
+python-dotenv>=1.0
+
+# --- LLM local (Ollama) ---
+ollama>=0.2.1
+
+# --- Dense retrieval ---
+qdrant-client>=1.9
+
+# --- Sparse retrieval ---
+bm25s>=0.2.0
+PyStemmer>=2.2  # tối ưu tokenizer cho bm25s (tuỳ chọn, không bắt buộc với tiếng Việt)
+
+# --- Embedding & Reranker (BGE) ---
+FlagEmbedding>=1.2.10
+torch>=2.2
+
+# --- Utilities ---
+tenacity>=8.2       # retry cho lời gọi Ollama/Qdrant
